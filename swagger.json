@@ -1,0 +1,32 @@
+Based on the given TDD, here's the code for Swagger JSON API, MongoDB Schema, and API endpoints:
+
+**Swagger JSON API Code:**
+
+```json
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Out of Network Online Claims Submission",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/auth/login": {
+      "post": {
+        "summary": "Authenticates the user and generates a JWT token."
+      }
+    },
+    "/api/claims": {
+      "post": {
+        "summary": "Submits a new insurance claim."
+      },
+      "get": {
+        "summary": "Retrieves all submitted claims."
+      }
+    },
+    "/api/claims/{claimId}": {
+      "get": {
+        "summary": "Retrieves details of a specific claim."
+      }
+    }
+  }
+}
